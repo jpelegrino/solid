@@ -17,7 +17,9 @@ public class PlaceServiceImpl implements PlaceService {
 
     @Autowired
     private ProvinciaRepository provinciaRepository;
+    @Autowired
     private MunicipioRepository municipioRepository;
+    @Autowired
     private SectorRepository sectorRepository;
 
     @Override
