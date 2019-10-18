@@ -1,0 +1,16 @@
+<header>
+
+        <nav class="navbar navbar-expand-md  bg-dark">
+                <div class=""><a href="#" class="navbar-brand">Todo-App</a></div>
+                <ul class="navbar-nav">
+                        <li *ngIf="this.hardcoderService.isLogin()" class="nav-link"><a routerLink="/welcome">Home</a></li>
+                    <li *ngIf="this.hardcoderService.isLogin()" class="nav-link"><a routerLink="/todo">Todo</a></li>
+                </ul>
+
+                <ul class="navbar-nav navbar-collapse justify-content-end">
+                        <li *ngIf="!this.hardcoderService.isLogin()" class="nav-link"><a routerLink="/login">Login</a></li>
+                        <li *ngIf="this.hardcoderService.isLogin()" class="nav-link"><a routerLink="logout">Logout</a></li>
+                    </ul>
+            
+            </nav>
+</header>
