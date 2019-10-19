@@ -8,7 +8,7 @@ import java.util.Date;
 @Table(name = "militante")
 public class Militante implements Serializable {
 
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long sequence;
     private String id;
     @Column(name = "first_name")
